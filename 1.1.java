@@ -7,7 +7,7 @@ public class Main {
     int durationSec = 64;
     double bpm_sec_double = 60.0/bpm;
     int count_of_8_int=durationSec/8;
-    double count_of_8_double = durationSec/8.0;
+    double count_of_8_double = durationSec*2/8.0;
 
-    System.out.println("код "+code+"\n"+"название "+title+"\n"+"стиль "+style+"\n"+"количество восьмерок "+count_of_8_double+"\n"+"длительность одного счета в секундах "+bpm_sec_double);
+    System.out.println("трек "+code+title+"\n"+"Длительность "+durationSec+"\n"+"стиль "+style+"\n"+"количество восьмерок "+count_of_8_double+"\n"+"один счет "+bpm_sec_double+"\n"+"всего счетов "+durationSec*2);
     }
